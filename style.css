@@ -1,0 +1,200 @@
+                * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', sans-serif;
+            }
+            
+            body,
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            
+            .hero {
+                position: relative;
+                background-image: url('body img.jpeg');
+                /* Your background image path */
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: 1;
+            }
+            
+            .content {
+                position: relative;
+                z-index: 2;
+                text-align: center;
+            }
+            
+            .content h1 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+            
+            .content span {
+                color: #ffffff;
+            }
+            
+            .content p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            
+            .buttons .btn {
+                background: #ffffff;
+                background-color: rgba(255, 255, 255, 0.5);
+                color: white;
+                padding: 10px 20px;
+                margin: 5px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            
+            .buttons .btn:hover {
+                background: #ba8ddb;
+            }
+            
+            .social-icons {
+                margin-top: 20px;
+            }
+            
+            .social-icons a {
+                color: white;
+                font-size: 1.5rem;
+                margin: 0 10px;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+            
+            .social-icons a:hover {
+                color: #ba8ddb;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            body {
+                background: #000;
+                color: #fff;
+                min-height: 100vh;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            nav {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                padding: 20px 0;
+                background: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                width: 100%;
+                top: 0;
+                z-index: 2;
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: white;
+                font-weight: 300;
+                transition: 0.3s;
+            }
+            
+            nav a:hover {
+                color: #ba8ddb;
+            }
+            
+            .about-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100vh;
+                padding: 0 10%;
+                background: rgba(0, 0, 0, 0.8);
+                position: relative;
+                z-index: 1;
+            }
+            
+            .about-text {
+                max-width: 50%;
+            }
+            
+            .about-text h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            
+            .about-text p {
+                font-size: 1rem;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+            
+            .about-text p span {
+                color: #00f0ff;
+                font-weight: 600;
+            }
+            
+            .about-text .email {
+                font-style: italic;
+                color: #ccc;
+            }
+            
+            .location {
+                margin-top: 20px;
+                font-size: 0.9rem;
+                color: #ccc;
+            }
+            
+            .bg-image {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 100%;
+                background-image: url('my profile picture.jpg');
+                /* 🔁 REPLACE with your photo filename */
+                background-size: cover;
+                background-position: center;
+                filter: brightness(0.9);
+                z-index: 0;
+            }
+            
+            @media(max-width: 768px) {
+                .about-container {
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 80px 20px;
+                }
+                .about-text {
+                    max-width: 100%;
+                }
+                .bg-image {
+                    display: none;
+                }
+                nav {
+                    flex-wrap: wrap;
+                }
+                nav a:hover {
+                    color: #ba8dd6;
+                }

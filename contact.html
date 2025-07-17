@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        body {
+            background: url('contact img.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            margin: 50px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 300;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ba8ddb;
+        }
+        
+        .contact-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            background: #f0f0f0;
+            color: #000;
+            font-size: 16px;
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #df9fe9;
+            color: #000;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ba8dd6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/xblkjnwj" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
